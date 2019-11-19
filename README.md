@@ -1,9 +1,6 @@
 # RobinhoodCpp
-<<<<<<< HEAD
-A C++ framework for trading/autotrading using Robinhood (includes support for two-factor authentication required by Robinhood).
-=======
+
 A cross platform C++ framework for trading/autotrading using Robinhood (includes support for two-factor authentication required by Robinhood).
->>>>>>> change path to headers
 
 ## Prerequisites
 This C++ framework depends on the following libraries
