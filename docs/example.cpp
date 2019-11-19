@@ -1,7 +1,7 @@
 //Test Example for RobinhoodCpp
 #include <iostream>
-#include "../robinhoodtrader.h"
-#include "../exceptions.h"
+#include "robinhoodtrader.h"
+#include "exceptions.h"
 
 using namespace std;
 
