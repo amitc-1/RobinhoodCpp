@@ -31,7 +31,7 @@ We can use package manager vcpkg to install the above libraries.
    Assuming you are in the directory which has CMakeLists.txt.  
    mkdir build; cd build  
    cmake .. "-DCMAKE_TOOLCHAIN_FILE=<PATH_TO_VCPKG>/vcpkg/scripts/buildsystems/vcpkg.cmake"  
-   PS> msbuild RobinhoodCpp.sln. (This will create RobinhoodCpp.lib in build/Debug as can be seen in output logs on the screen)
+   PS> msbuild RobinhoodCpp.sln. (This will create RobinhoodCpp.lib in build/Debug as can be seen in output logs on the screen)   
    Linux:~/$ make  
 
 ## Build Example
@@ -41,6 +41,6 @@ We can use package manager vcpkg to install the above libraries.
 
 3) cmake .. "-DCMAKE_PREFIX_PATH=<Path to RobinhoodCpp>”
 
-4) PS>MSBuild.exe .\Example.sln (This will create example.exe in buildExample/Debug )
+4) PS>MSBuild.exe .\Example.sln (This will create example.exe in buildExample/Debug )    
    Linux:~/$ make
 
