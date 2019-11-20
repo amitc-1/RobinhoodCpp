@@ -39,7 +39,7 @@ We can use package manager vcpkg to install the above libraries.
 
 2) mkdir buildExample;  cd buildExample
 
-3) cmake .. "-DCMAKE_PREFIX_PATH=<Path to RobinhoodCpp>”
+3) cmake .. "-DCMAKE_PREFIX_PATH=<Path_to_RobinhoodCpp>/RobinhoodCpp”
 
 4) PS>MSBuild.exe .\Example.sln (This will create example.exe in buildExample/Debug )    
    Linux:~/$ make
