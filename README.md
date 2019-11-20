@@ -25,12 +25,22 @@ We can use package manager vcpkg to install the above libraries.
    PS> .\vcpkg install curl  
    Linux:~/$ ./vcpkg install curl 
    
-5) Download RobinhoodCpp from github. 
+5) Download/Clone RobinhoodCpp from github.
 
-6) Build RobinhoodCpp  
+6) Build RobinhoodCpp.lib
    Assuming you are in the directory which has CMakeLists.txt.  
    mkdir build; cd build  
    cmake .. "-DCMAKE_TOOLCHAIN_FILE=<PATH_TO_VCPKG>/vcpkg/scripts/buildsystems/vcpkg.cmake"  
-   PS> msbuild RobinhoodCpp.sln. (This will create RobinhoodCpp.exe in build/Debug as can be seen in output logs on the screen)  
+   PS> msbuild RobinhoodCpp.sln. (This will create RobinhoodCpp.lib in build/Debug as can be seen in output logs on the screen)   
    Linux:~/$ make  
-  
+
+## Build Example
+1) cd docs
+
+2) mkdir buildExample;  cd buildExample
+
+3) cmake .. "-DCMAKE_PREFIX_PATH=<Path to RobinhoodCpp>”
+
+4) PS>MSBuild.exe .\Example.sln (This will create example.exe in buildExample/Debug )    
+   Linux:~/$ make
+

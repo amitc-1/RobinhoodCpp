@@ -14,9 +14,9 @@ find_path(NLOHMANN_INCLUDE_DIR NAMES json.hpp PATH_SUFFIXES nlohmann)
 include_directories(./ authentication ${CURL_INCLUDE_DIRS} ${NLOHMANN_INCLUDE_DIR})
  
 #manually add the sources using the set command 
-set(SOURCES docs/example.cpp robinhoodtrader.cpp authentication/authentication.cpp authentication/base32.c authentication/hmac.c authentication/sha1.c authentication/util.c)
+set(SOURCES robinhoodtrader.cpp authentication/authentication.cpp authentication/base32.c authentication/hmac.c authentication/sha1.c authentication/util.c)
  
-add_executable(RobinhoodCpp ${SOURCES})
+add_library(RobinhoodCpp STATIC ${SOURCES})
 
 target_link_libraries(RobinhoodCpp ${CURL_LIBRARIES})
 
